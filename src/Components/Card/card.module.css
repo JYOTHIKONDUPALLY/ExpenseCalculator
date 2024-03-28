@@ -1,0 +1,34 @@
+.container{
+    border:1px solid red;
+    width:100%;
+    max-width: 400px;
+    background-image: linear-gradient(to top, #bdedfb 0%, #72bedc 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  height:auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.font1{
+ font-size: 40px;
+ border:1px solid red;
+}
+.font2{
+  border:1px solid red;
+font-size: 30px;
+font-weight: 600;
+color: beige;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #b366fc 0%, #8647fb 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+color:white;
+border:1px solid #b366fc;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
