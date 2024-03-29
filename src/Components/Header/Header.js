@@ -17,7 +17,7 @@ const Header = () => {
       <div className={styles.logo}>
         <SiDgraph style={{ width: '35px', height: '35px', color: '#B366FC' }} /> Spends
       </div>
-      <nav className={styles.nav}>
+      {/* <nav className={styles.nav}>
         <ul>
           <li>Home</li>
           <li>Category</li>
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
         </>
    
-      )}
+      )} */}
     </div>
   );
 };

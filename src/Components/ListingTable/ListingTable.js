@@ -19,8 +19,12 @@ const formatDate = (dateString) => {
     return date.toLocaleDateString('en-US', options);
   };
 const Paginate=(pageNumber)=> setCurrentPage(pageNumber);
+const handleEdit=(e)=>{
 
-console.log(`currentpageitems${currentPageItems.length}, currentpage${currentPage}, firstIndex${IndexOfFirstItem}, lastIndex${indexOfLastItem}`)
+}
+const handleDelete=(e)=>{
+
+}
 return(
     <div className={styles.container}>
 <table className={styles.table}>
@@ -38,7 +42,7 @@ return(
                 <div style={{fontSize:"20px", fontWeight:"600"}}>{expenses.title}</div><div>{formatDate(expenses.date)}</div>
             </td>
             <td>{expenses.category}</td>
-            <td>{expenses.amount} <span className={styles.icon}><MdEdit/><MdDeleteOutline/></span></td>
+            <td>{expenses.amount} <span className={styles.icon}><MdEdit onClick={()=>handleEdit()}/><MdDeleteOutline onClick={()=>handleDelete()}/></span></td>
         </tr>
 
     ))}
