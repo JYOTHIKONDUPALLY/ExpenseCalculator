@@ -1,0 +1,56 @@
+.container {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    border:1px solid red;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #B366FC;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #B366FC;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .Pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Pagination span {
+    margin: 0 30px;
+  }
+  
+  .Pagination button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #b366fc 0%, #8647fb 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 1px solid #b366fc;
+    width:50px;
+    height: 35px;
+  }
+  
+  .Pagination button:hover {
+ transform: scale(1.1);
+    border: none;
+    background-image: linear-gradient(to top, #8647fb 0%, #b366fc 100%);
+  }
+  
+  .Pagination button:disabled {
+    border: none;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    cursor: not-allowed;
+  }
+  
+ 
