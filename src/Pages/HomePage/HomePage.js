@@ -3,6 +3,9 @@ import styles from "./HomePage.module.css";
 import AddExpenseForm from "../../components/AddExpenseForm/AddExpenseForm";
 import AddIncomeform from "../../components/AddIncomeForm/AddIncomeform";
 import ListingTable from "../../components/ListingTable/ListingTable";
+import CategoryPieChart from "../../components/PieChart/PieChart";
+import Example from "../../components/Barchart/Barchart";
+import ExpensesData from "../../data/ExpensesData.json";
 const HomePage = () => {
   const [walletBalance, setWalletBalance] = useState(5000);
   const [expenses, setExpenses] = useState(500);
@@ -39,6 +42,26 @@ setIncomeFormIsopen(false);
     setIncomeFormIsopen(false);
   }
 
+
+    const calculateCategoryExpenses=()=>{
+      const categoryExpenses={}
+      ExpensesData.forEach((expense)=>{
+        const {category, amount}=expense;
+        if(categoryExpenses[category]){
+          categoryExpenses[category]+=amount;
+        }else{
+          categoryExpenses[category]=amount;
+        }
+      });
+      const categoryData=Object.keys(categoryExpenses).map(category=>({
+        category, 
+        value:categoryExpenses[category]
+      }));
+       console.log(categoryData);
+      return categoryData;
+    }
+  
+    const CategoryData=calculateCategoryExpenses();
   return (
     <div className={styles.container}>
       <div className={styles.heroSection}>
@@ -72,13 +95,13 @@ setIncomeFormIsopen(false);
             </div>
           )}
         </div>
-        <div className={styles.piechart}> pie chart</div>
+        <div className={styles.piechart}> piechart<CategoryPieChart /></div>
       </div>
-      <div>
+      {/* <div>
         <h2> Recent Transcations</h2>
         <ListingTable/>
-      </div>
-      <div>chart</div>
+      </div> */}
+      <div> barchart<Example/></div>
     </div>
   );
 };
