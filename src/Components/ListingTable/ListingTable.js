@@ -1,6 +1,6 @@
 import styles from "./ListingTable.module.css";
 import React , {useState} from "react";
-import Expensesdata from "../../constants/ExpensesData.json";
+import ExpensesData from "../../data/ExpensesData.json";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
@@ -8,7 +8,7 @@ import { MdDeleteOutline } from "react-icons/md";
 const ListingTable=()=>{
 const [currentPage,setCurrentPage]=useState(1);
 const itemsPerPage=10;
-const sortedTransactions = Expensesdata.sort((a, b) => new Date(b.date) - new Date(a.date));
+const sortedTransactions = ExpensesData.sort((a, b) => new Date(b.date) - new Date(a.date));
 const indexOfLastItem=currentPage*itemsPerPage;
 const IndexOfFirstItem=indexOfLastItem-itemsPerPage;
 const currentPageItems=sortedTransactions.slice(IndexOfFirstItem, indexOfLastItem);
@@ -56,7 +56,7 @@ return(
     <span>{currentPage}</span>
     <button
     onClick={()=>Paginate(currentPage+1)}
-    disabled={indexOfLastItem>=Expensesdata.length}><FaArrowRight/>
+    disabled={indexOfLastItem>=ExpensesData.length}><FaArrowRight/>
     </button>
     </div> 
     </div>

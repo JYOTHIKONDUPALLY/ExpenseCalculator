@@ -1,13 +1,65 @@
-.CardContainer{
-    margin:20px;
-    border:1px solid red;
+.container{
+    border: 1px solid red;
+}
+
+.heroSection{
+    border: 1px solid red;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.walletBalance ,.expense{
+    border:1px solid  #b366fc;
+    padding:10px;
+    margin: 10px 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
-    gap:20px;
+    width:300px;
+    height:150px;
+    /* background-image: linear-gradient(to top, #bdedfb 0%, #72bedc 100%); */
 }
-.table{
-    text-align: center;
-    border:1px solid red;
+
+.walletBalance span{
+    font-size: 20px;
+    padding:0 5px;
+    color:rgb(63, 182, 63);
+ 
 }
+
+.expense span{
+    font-size: 20px;
+    padding:0 5px;
+    color:red;
+}
+.button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #b366fc 0%, #8647fb 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+color:white;
+border:1px solid #b366fc;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    border: none;
+    background-image: linear-gradient(to top, #8647fb 0%, #b366fc 100%);
+}
+
+.expenseForm{
+ margin: auto;
+}
+.overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
