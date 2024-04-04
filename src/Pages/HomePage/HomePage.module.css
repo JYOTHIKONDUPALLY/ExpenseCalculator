@@ -1,12 +1,17 @@
 .container{
-    border: 1px solid red;
+
 }
 
 .heroSection{
-    border: 1px solid red;
+border:1px solid black;
     display:flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 25px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(74, 76, 79, 0.83);
 }
 
 .walletBalance ,.expense{
@@ -19,7 +24,8 @@
     justify-content: space-around;
     width:300px;
     height:150px;
-    /* background-image: linear-gradient(to top, #bdedfb 0%, #72bedc 100%); */
+    background-image: linear-gradient(to top, #bdedfb 0%, #72bedc 100%);
+    border-radius: 10px;
 }
 
 .walletBalance span{
@@ -33,6 +39,7 @@
     font-size: 20px;
     padding:0 5px;
     color:red;
+
 }
 .button{
     padding: 10px 20px;
@@ -62,4 +69,41 @@ border:1px solid #b366fc;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999; 
+  }
+
+  .piechart{
+    position: relative;
+  }
+
+.expenseList{
+    text-align: center;
+    margin:20px
+
+}
+
+@media only screen  and (max-width:960px){
+.exepenseSummary{
+    display: flex!important;
+    flex-direction: column !important;;
+    align-items: center !important;
+}
+.expenseList{
+    margin:10px auto;
+}
+.heroSection{
+    background-color: black;
+}
+}
+
+@media only screen and (min-width: 961px) {
+    .expenseSummary {
+      display: grid;
+      grid-template-columns: 60% 40%;
+    }
+  }
+
+  .barchart{
+    text-align: center;
+    margin:20px
   }

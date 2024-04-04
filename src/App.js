@@ -1,12 +1,16 @@
 import './App.css';
-import CategoryPieChart from './components/PieChart/PieChart';
+import { SnackbarProvider } from 'notistack';
 import HomePage from './pages/HomePage/HomePage';
+
 function App() {
   return (
-    <div className="App">
+    <SnackbarProvider anchorOrigin={{ vertical: 'top', horizontal: 'center' }}>
+         <div className="App">
      <HomePage/>
      {/* <CategoryPieChart/> */}
     </div>
+    </SnackbarProvider>
+ 
   );
 }
 

@@ -53,12 +53,7 @@
     "title":"samosa",
     "category": "food",
     "amount": 56
-  }, {
-    "date": "3/28/2024",
-    "title":"House Rent",
-    "category": "accomidation",
-    "amount":3000
-  }, {
+  },  {
     "date": "1/30/2024",
     "title":"T-shirt",
     "category": "clothing",
@@ -68,12 +63,7 @@
     "title":"pant",
     "category": "clothing",
     "amount": 520
-  }, {
-    "date": "1/24/2024",
-    "title":"House Rent",
-    "category": "accomidation",
-    "amount": 3000
-  }, {
+  },  {
     "date": "4/13/2023",
     "title":"shoes",
     "category": "clothing",
@@ -83,16 +73,6 @@
     "title":"Rice Bag",
     "category": "food",
     "amount": 2600
-  }, {
-    "date": "2/6/2024",
-    "title":"textBook",
-    "category": "stationary",
-    "amount": 620
-  }, {
-    "date": "4/3/2023",
-    "title":"House Rent",
-    "category": "accomidation",
-    "amount":3000
   }, {
     "date": "9/20/2023",
     "title":"meals",
@@ -114,11 +94,6 @@
     "category": "food",
     "amount": 73
   }, {
-    "date": "10/13/2023",
-    "title":"project file",
-    "category": "stationary",
-    "amount": 110
-  }, {
     "date": "10/10/2023",
     "title":"jacket",
     "category": "clothing",
@@ -133,14 +108,70 @@
     "title":"auto",
     "category": "travel",
     "amount": 513
-  }, {
-    "date": "1/30/2024",
-    "title":"notebooks",
-    "category": "stationary",
-    "amount": 90
-  }, {
+  },  {
     "date": "8/30/2023",
     "title":"auto",
     "category": "travel",
     "amount": 95
-  }]
+  },   {
+    "date": "8/30/2022",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "9/30/2022",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "10/30/2022",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "11/30/2022",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "12/30/2022",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "6/30/2022",
+    "title":"meal",
+    "category": "food",
+    "amount": 195
+  }, {
+    "date": "8/30/2021",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "9/30/2021",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "10/30/2021",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "11/30/2021",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "12/30/2021",
+    "title":"auto",
+    "category": "travel",
+    "amount": 95
+  }, {
+    "date": "6/30/2021",
+    "title":"samosa",
+    "category": "food",
+    "amount": 15
+  }
+]
